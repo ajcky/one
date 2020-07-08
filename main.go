@@ -68,21 +68,21 @@ func InsertSort(num []int) []int {
 	}
 	return num
 }
-
+// 快速排序
 func QuickSort(num []int, left, right int) []int {
-	if left > right {
+	if left < right {
 		mid := Partition(num, left, right)
 		QuickSort(num, left, mid-1)
 		QuickSort(num, mid+1, right)
 	}
 	return num
 }
-
+//
 func Partition(num []int, left, right int) int {
 	tmp := num[left]
 	for left < right {
 		for left < right && num[right] >= tmp {
-			right --
+			right --git
 		}
 		num[left] = num[right]
 		for left < right && num[left] <= tmp {
