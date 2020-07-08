@@ -82,7 +82,7 @@ func Partition(num []int, left, right int) int {
 	tmp := num[left]
 	for left < right {
 		for left < right && num[right] >= tmp {
-			right --git
+			right --
 		}
 		num[left] = num[right]
 		for left < right && num[left] <= tmp {
