@@ -3,6 +3,9 @@ package main
 import "fmt"
 
 func main() {
+
+
+
 	var num = []int{1, 9, 8, 5, 6, 7, 2}
 	//sortNum := BubbleSort(num)
 	//fmt.Println(sortNum)
